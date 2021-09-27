@@ -10,21 +10,21 @@ public class Searching<T> {
 	// a linear search. Returns a reference to the target object from
 	// the array if found, and null otherwise.
 	// -----------------------------------------------------------------
-	public T linearSearch(T[] list, T target) {
+	public int linearSearch(T[] list, T target) {
 		int index = 0;
 		boolean found = false;
 
 		while (!found && index < list.length) {
+
 			if (list[index].equals(target))
 				found = true;
 			else
 				index++;
 		}
-
 		if (found)
-			return list[index];
+			return index;
 		else
-			return null;
+			return -1;
 	}
 
 	// -----------------------------------------------------------------
@@ -33,7 +33,7 @@ public class Searching<T> {
 	// ascending order when it is passed in. Returns a reference to
 	// the target object from the array if found, and null otherwise.
 	// -----------------------------------------------------------------
-	public Comparable<T> binarySearch(Comparable<T>[] list, Comparable<T> target) {
+	public int binarySearch(Comparable<T>[] list, Comparable<T> target) {
 		int min = 0, max = list.length - 1, mid = 0;
 		boolean found = false;
 
@@ -48,8 +48,8 @@ public class Searching<T> {
 		}
 
 		if (found)
-			return list[mid];
+			return mid;
 		else
-			return null;
+			return -1;
 	}
 }
