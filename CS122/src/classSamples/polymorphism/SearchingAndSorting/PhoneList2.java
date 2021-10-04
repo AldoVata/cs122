@@ -10,7 +10,8 @@ public class PhoneList2 {
 	// them.
 	// -----------------------------------------------------------------
 	public static void main(String[] args) {
-		Contact test, found;
+		Contact test;
+		int found;
 		Contact[] friends = new Contact[8];
 
 		friends[0] = new Contact("John", "Smith", "610-555-7384");
@@ -26,7 +27,7 @@ public class PhoneList2 {
 
 		test = new Contact("Frank", "Phelps", "");
 		found = searches.linearSearch(friends, test);
-		if (found != null)
+		if (found != -1)
 			System.out.println("Found: " + found);
 		else
 			System.out.println("The contact was not found.");
@@ -36,8 +37,8 @@ public class PhoneList2 {
 		sorts.selectionSort(friends);
 
 		test = new Contact("Mario", "Guzman", "");
-		found = (Contact) searches.binarySearch(friends, test);
-		if (found != null)
+		found = searches.binarySearch(friends, test);
+		if (found != -1)
 			System.out.println("Found: " + found);
 		else
 			System.out.println("The contact was not found.");
