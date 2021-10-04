@@ -19,10 +19,10 @@ public class InvalidCharacterDriver {
 					throw new InvalidCharacterException("Not a valid character");
 			}catch(IndexOutOfBoundsException e)
 			{
-				System.out.println("Input is Empty");
+				System.err.println("Input Is Empty");
 			}catch(InvalidCharacterException e)
 			{
-				System.out.println(e.getMessage());
+				System.err.println(e.getMessage());
 			}
 			System.out.print("Enter a Character (000 to quit): ");
 			input = scan.nextLine();
