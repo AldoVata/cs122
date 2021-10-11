@@ -1,4 +1,4 @@
-package classSamples.gui_1.Snowman;//************************************************************************
+package classSamples.gui1.Snowman;//************************************************************************
 //  Snowman.java       Author: Lewis/Loftus
 //
 //  Demonstrates the translation of a set of shapes.
@@ -49,6 +49,7 @@ public class Snowman extends Application {
 				rightArm, hat);
 		snowman.setTranslateX(170);
 		snowman.setTranslateY(50);
+		//snowman.setRotate(180);
 
 		Circle sun = new Circle(50, 50, 30);
 		sun.setFill(Color.GOLD);

@@ -1,8 +1,4 @@
-package classSamples.gui1.HelloJavaFX;//************************************************************************
-//  HelloJavaFX.java       Author: Lewis/Loftus
-//
-//  Demonstrates a basic JavaFX application.
-//************************************************************************
+package classlab.week5;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -11,16 +7,15 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class HelloJavaFX extends Application {
+public class FirstJavaFxCode extends Application {
 	// --------------------------------------------------------------------
 	// Creates and displays two Text objects in a JavaFX window.
 	// --------------------------------------------------------------------
 	public void start(Stage primaryStage) {
-		Text hello = new Text(50, 50, "Hello, JavaFX!");
-		Text question = new Text(120, 80, "How's it going?");
+		Text hello = new Text(240, 120, "Aldo Vata");
 
-		Group root = new Group(hello, question);
-		Scene scene = new Scene(root, 300, 120, Color.LIGHTGREEN);
+		Group root = new Group(hello);
+		Scene scene = new Scene(root, 480, 240, Color.PURPLE);
 
 		primaryStage.setTitle("A JavaFX Program");
 		primaryStage.setScene(scene);
@@ -35,3 +30,4 @@ public class HelloJavaFX extends Application {
 		launch(args);
 	}
 }
+

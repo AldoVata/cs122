@@ -1,4 +1,4 @@
-package classSamples.gui_2.ImageDisplay;
+package classSamples.gui2.ImageDisplay;
 
 import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
@@ -19,7 +19,7 @@ public class ImageDisplay extends Application {
 	// Displays an image centered in a window.
 	// --------------------------------------------------------------------
 	public void start(Stage primaryStage) {
-		Image img = new Image("gull.jpg");
+		Image img = new Image("file:src/classSamples/gui2/ImageDisplay/gull.jpg");
 		ImageView imgView = new ImageView(img);
 
 		StackPane pane = new StackPane(imgView);
