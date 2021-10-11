@@ -1,4 +1,4 @@
-package classSamples.polymorphism.Firm;//********************************************************************
+package assignments.week4;//********************************************************************
 //  Volunteer.java       Author: Lewis/Loftus
 //
 //  Represents a staff member that works as a volunteer.

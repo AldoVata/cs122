@@ -1,4 +1,4 @@
-package classSamples.polymorphism.Firm;//********************************************************************
+package assignments.week4;//********************************************************************
 //  Staff.java       Author: Lewis/Loftus
 //
 //  Represents the personnel staff of a particular business.

@@ -1,4 +1,4 @@
-package classSamples.polymorphism.Firm;//********************************************************************
+package assignments.week4;//********************************************************************
 //  Firm.java       Author: Lewis/Loftus
 //
 //  Demonstrates polymorphism via inheritance.

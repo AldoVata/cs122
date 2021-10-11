@@ -1,10 +1,10 @@
-package classSamples.polymorphism.Firm;//********************************************************************
+package assignments.week4;//********************************************************************
 //  StaffMember.java       Author: Lewis/Loftus
 //
 //  Represents a generic staff member.
 //********************************************************************
 
-abstract public class StaffMember {
+abstract public class StaffMember implements Payable{
 	protected String name;
 	protected String address;
 	protected String phone;
@@ -35,5 +35,4 @@ abstract public class StaffMember {
 	// Derived classes must define the pay method for each type of
 	// employee.
 	// -----------------------------------------------------------------
-	public abstract double pay();
 }
