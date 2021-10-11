@@ -35,4 +35,9 @@ public class Executive extends Employee {
 
 		return payment;
 	}
+	public int vacation()
+	{
+		vacDays = 18;
+		return vacDays;
+	}
 }

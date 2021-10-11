@@ -7,7 +7,7 @@ package assignments.week4;//****************************************************
 public class Employee extends StaffMember {
 	protected String socialSecurityNumber;
 	protected double payRate;
-
+	protected int vacDays = 14;
 	// -----------------------------------------------------------------
 	// Constructor: Sets up this employee with the specified
 	// information.
@@ -25,7 +25,7 @@ public class Employee extends StaffMember {
 	public String toString() {
 		String result = super.toString();
 
-		result += "\nSocial Security Number: " + socialSecurityNumber;
+		result += "\nSocial Security Number: " + socialSecurityNumber + "\nVacation Days: " + vacation();
 
 		return result;
 	}
@@ -35,5 +35,9 @@ public class Employee extends StaffMember {
 	// -----------------------------------------------------------------
 	public double pay() {
 		return payRate;
+	}
+	public int vacation()
+	{
+		return vacDays;
 	}
 }
