@@ -1,4 +1,4 @@
-package classSamples.gui_2.FahrenheitConverter;
+package classSamples.gui2.FahrenheitConverter;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -15,7 +15,7 @@ public class FahrenheitConverter extends Application {
 	// Launches the temperature converter application.
 	// --------------------------------------------------------------------
 	public void start(Stage primaryStage) {
-		Scene scene = new Scene(new FahrenheitPane(), 300, 150);
+		Scene scene = new Scene(new FahrenheitPane(), 400, 200);
 
 		primaryStage.setTitle("Fahrenheit Converter");
 		primaryStage.setScene(scene);

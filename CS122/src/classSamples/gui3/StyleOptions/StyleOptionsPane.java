@@ -1,4 +1,4 @@
-package classSamples.gui_3.StyleOptions;
+package classSamples.gui3.StyleOptions;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
@@ -27,7 +27,7 @@ public class StyleOptionsPane extends VBox {
 	// --------------------------------------------------------------------
 	public StyleOptionsPane() {
 		phrase = new Text("Say it with style!");
-		phrase.setFont(new Font("Helvetica", 36));
+		phrase.setFont(new Font("Calibri", 36));
 
 		boldCheckBox = new CheckBox("Bold");
 		boldCheckBox.setOnAction(this::processCheckBoxAction);
@@ -55,6 +55,6 @@ public class StyleOptionsPane extends VBox {
 		if (italicCheckBox.isSelected())
 			posture = FontPosture.ITALIC;
 
-		phrase.setFont(Font.font("Helvetica", weight, posture, 36));
+		phrase.setFont(Font.font("Calibri", weight, posture, 36));
 	}
 }

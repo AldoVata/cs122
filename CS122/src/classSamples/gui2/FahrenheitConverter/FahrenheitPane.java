@@ -1,4 +1,4 @@
-package classSamples.gui_2.FahrenheitConverter;
+package classSamples.gui2.FahrenheitConverter;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
@@ -39,7 +39,7 @@ public class FahrenheitPane extends GridPane {
 
 		fahrenheit = new TextField();
 		fahrenheit.setFont(font);
-		fahrenheit.setPrefWidth(50);
+		fahrenheit.setPrefWidth(170);
 		fahrenheit.setAlignment(Pos.CENTER);
 		fahrenheit.setOnAction(this::processReturn);
 
@@ -59,8 +59,13 @@ public class FahrenheitPane extends GridPane {
 	// presses the return key while in the text field.
 	// --------------------------------------------------------------------
 	public void processReturn(ActionEvent event) {
-		int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
-		int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
-		result.setText(celsiusTemp + "");
+		try {
+			double fahrenheitTemp = Double.parseDouble(fahrenheit.getText());
+			double celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
+			result.setText(celsiusTemp + ""); 
+		}
+		catch(NumberFormatException e) {
+			result.setText("Error: Input Not A Number");
+		}
 	}
 }
