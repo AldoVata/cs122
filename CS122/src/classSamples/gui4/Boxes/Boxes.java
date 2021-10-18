@@ -1,4 +1,4 @@
-package classSamples.gui_4.Boxes;
+package classSamples.gui4.Boxes;
 
 import java.util.Random;
 import javafx.application.Application;
@@ -25,8 +25,8 @@ public class Boxes extends Application {
 		Random gen = new Random();
 
 		for (int count = 1; count <= 50; count++) {
-			int x = gen.nextInt(350) + 1;
-			int y = gen.nextInt(350) + 1;
+			int x = gen.nextInt(850) + 1;
+			int y = gen.nextInt(850) + 1;
 
 			int width = gen.nextInt(50) + 1;
 			int height = gen.nextInt(50) + 1;
@@ -44,7 +44,7 @@ public class Boxes extends Application {
 			root.getChildren().add(box);
 		}
 
-		Scene scene = new Scene(root, 400, 400, Color.BLACK);
+		Scene scene = new Scene(root, 900, 900, Color.BLACK);
 
 		primaryStage.setTitle("Boxes");
 		primaryStage.setScene(scene);
