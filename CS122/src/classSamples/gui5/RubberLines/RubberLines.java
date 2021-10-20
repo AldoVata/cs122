@@ -1,4 +1,4 @@
-package classSamples.gui_5.RubberLines;
+package classSamples.gui5.RubberLines;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -26,7 +26,7 @@ public class RubberLines extends Application {
 		root = new Group();
 
 		Scene scene = new Scene(root, 500, 300, Color.BLACK);
-
+		
 		scene.setOnMousePressed(this::processMousePress);
 		scene.setOnMouseDragged(this::processMouseDrag);
 
