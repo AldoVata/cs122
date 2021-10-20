@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 //************************************************************************
 
 public class AlienDirection extends Application {
-	public final static int JUMP = 10;
+	public final static int JUMP = 30;
 
 	private ImageView imageView;
 
@@ -24,7 +24,7 @@ public class AlienDirection extends Application {
 	// Displays an image that can be moved using the arrow keys.
 	// --------------------------------------------------------------------
 	public void start(Stage primaryStage) {
-		Image alien = new Image("alien.png");
+		Image alien = new Image("file:src/classSamples/gui5/AlienDirection/alien.png");
 
 		imageView = new ImageView(alien);
 		imageView.setX(20);
@@ -58,8 +58,20 @@ public class AlienDirection extends Application {
 		case LEFT:
 			imageView.setX(imageView.getX() - JUMP);
 			break;
+		case W:
+			imageView.setY(imageView.getY() - JUMP);
+			break;
+		case S:
+			imageView.setY(imageView.getY() + JUMP);
+			break;
+		case D:
+			imageView.setX(imageView.getX() + JUMP);
+			break;
+		case A:
+			imageView.setX(imageView.getX() - JUMP);
+			break;
 		default:
-			break; // do nothing if it's not an arrow key
+			break; 
 		}
 	}
 
