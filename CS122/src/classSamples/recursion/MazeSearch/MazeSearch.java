@@ -1,4 +1,4 @@
-package classSamples.recursions.MazeSearch;//********************************************************************
+package classSamples.recursion.MazeSearch;//********************************************************************
 //  MazeSearch.java       Author: Lewis/Loftus
 //
 //  Demonstrates recursion.
@@ -14,7 +14,7 @@ public class MazeSearch {
 
 		System.out.println(labyrinth);
 
-		if (labyrinth.traverse(0, 0))
+		if (labyrinth.traverse(1, 0))
 			System.out.println("The maze was successfully traversed!");
 		else
 			System.out.println("There is no possible path.");
