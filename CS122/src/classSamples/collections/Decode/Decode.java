@@ -23,8 +23,6 @@ public class Decode {
 		message = scan.nextLine();
 		System.out.println("The decoded message is:");
 
-		while (index < message.length()) {
-			// Push word onto stack
 			while (index < message.length() && message.charAt(index) != ' ') {
 				word.push(message.charAt(index));
 				index++;
@@ -33,9 +31,8 @@ public class Decode {
 			// Print word in reverse
 			while (!word.empty())
 				System.out.print(word.pop());
-			System.out.print(" ");
-			index++;
-		}
+			//System.out.print(" ");
+			//index++;
 
 		System.out.println();
 	}
